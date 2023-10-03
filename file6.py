@@ -1,29 +1,20 @@
-# a=str(input("enter any sentence"))
-# words=a.split()
-# longest=max(words, key=len)
-# print("longest word is",longest)
-# print(len(longest))
+# x="The global warming levels have way too up"
+# a=x.count('a')
+# b=x.count('e')
+# c=x.count('i')
+# d=x.count('o')
+# e=x.count('u')
+# sum=a+b+c+d+e
+# print("the number of vowels in the given string is",sum)
 
-# a=[2,9,3,8,4,1,7,5]
-# maximum=max(a)
-# minimum=min(a)
-# a.remove(maximum)
-# a.remove(minimum)
-# max=max(a)
-# min=min(a)
-# print(max)
-# print(min)
+# a="malayalam"
+# b=a[::-1]
+# print("the palindrome of a is",b)
 
-x="My name is Sandhra Anna Jerry"
-print(type(x))
-print(x[:7])
-print(x[7])
-print(x.casefold())
-print(x.count('A'))
-print(x.isdigit())
-print(x.islower())
-print(x.isupper())
-print(x.upper())
-print(x.lower())
-print(x.swapcase())
-print(x.center(5))
+x="lorem Ipsum is simply dummy text of the printing and typesetting industry."
+y="lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+z="it has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
+a=(x.capitalize())
+b=(y.capitalize())
+c=(z.capitalize())
+print(a+b+c)
