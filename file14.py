@@ -36,10 +36,40 @@
 # print(b)
 
 # Contains duplicate
-a=[1,2,3,4,3,2,5]
-b=set(a)
-if a==b:
-    print("False")
-else:
-    print("True")
+# a=[1,2,3,4,3,2,5]
+# b=set(a)
+# if a==b:
+#     print("False")
+# else:
+#     print("True")
 
+# Length of the last word
+# a="python programs are interesting"
+# b=a.strip()
+# c=b.split()
+# d=c[-1]
+# print("the last word is ",d,"and the length of that word is",len(d))
+
+#Number of segments in a string
+# a="hello world"
+# b=a.split()
+# print(len(b))
+
+#Is subsequence
+# a="ever"
+# b="for"
+# if a in b:
+#         print('true')
+# else:
+#         print('false')
+
+#Search insert position
+# a=input("enter the numbers in order")
+# b=list(a)
+# n=(input("enter the number"))
+# if n in b:
+#     print(b.index(n))
+
+# Third maximum number
+a=[1,2]
+if len(a)>2

@@ -1,3 +1,4 @@
+# Two sum
 # a=[4,2,3]
 # sum=6
 # b=[]
@@ -20,7 +21,7 @@
 #     print("the entered data is invalid")
 
 
-a=[2,6,5,4,]
+a=[2,6,5,4]
 sum=10
 b=[]
 for i in range(0,len(a)):
