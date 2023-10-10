@@ -20,13 +20,41 @@
 # else:
 #     print("the entered data is invalid")
 
+# a=[2,6,5,4]
+# sum=10
+# b=[]
+# for i in range(0,len(a)):
+#     for j in range(i+1,len(a)):
+#      if a[i]+a[j]==sum:
+#         b.append(i)
+#         b.append(j)
+#         print(b)
 
-a=[2,6,5,4]
-sum=10
-b=[]
-for i in range(0,len(a)):
-    for j in range(i+1,len(a)):
-     if a[i]+a[j]==sum:
-        b.append(i)
-        b.append(j)
-        print(b)
+
+# Add binary
+# a='111'
+# b='101'
+# sum=bin(int(a,2)+int(b,2))
+# print(sum[2:])
+
+
+# add two integers
+# a=int(input("enter the number"))
+# b=int(input("enter the number"))
+# sum=a+b
+# print("sum of",a,"and",b,"is",sum)
+
+
+# Majority element
+# a=[1,1,2,1,3,1,4,1,1,1,1,5]
+# b=len(a)
+# for i in range(b):
+#     if a.count(i)>b/2:
+#         print("The majority element is",i,"with",a.count(i),"occurences")
+
+
+# 
+    
+
+
+
