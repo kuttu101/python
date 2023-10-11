@@ -46,15 +46,37 @@
 
 
 # Majority element
-# a=[1,1,2,1,3,1,4,1,1,1,1,5]
+# a=[1,2,3,3,3,3,4,5,6,3,3,3]
 # b=len(a)
 # for i in range(b):
-#     if a.count(i)>b/2:
-#         print("The majority element is",i,"with",a.count(i),"occurences")
-
-
-# 
+#         if a.count(i)>b/2:
+#                print("The majority element is",i,"with",a.count(i),"occurences")
     
 
+# Reverse string
+# list=['a','p','p','l','e']
+# print(list[::-1])
+
+
+# Climbing stairs
+# n=int(input("enter the number of stairs to be climbed"))
+# b=1
+# c=1
+
+
+# Plus one
+a=[1,3,9]
+b=len(a)
+index=b-1
+while(index>=0 and a[index]==9):
+    a[index]=0
+    index-=1
+
+    if(index<0):
+        a.insert(0,1)
+    else:
+        a[index]+=1
+print(a)
+    
 
 
