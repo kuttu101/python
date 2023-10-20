@@ -19,10 +19,10 @@ while True:
         details.append(bank.copy())
     elif choice==2:
          for i in details:
-              print('='*10)
+              print('_'*10)
               for key,value in i.items():
                    print(key,':',value)
-                   print('='*10)
+                   print('_'*10)
              
     elif choice==3:
         account_no=int(input("enter your account number"))
