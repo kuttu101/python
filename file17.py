@@ -1,39 +1,60 @@
 student={}
 prn=2000210
-stdlist=[]
-teacher={}
-trslist=[]
+studentlist=[]
+teachlist=[]
+studentstore=[]
+teachstore=[]
 while True:
-    print('1.student name','2.view student details','3.teacher name','4.view teachers details','5.exit')
+    print('1.student name','2.teacher details','3.view student','4.view teacher','5.view assigned','6.','7.fees','8.exit()')
     choice=int(input('enter your choice'))
     if choice==1:
-        stdname=input('enter your name')
-        student['stdname']=stdname
-        stdage=int(input('enter the age'))
-        student['stdage']=stdage
-        dept=input('enter the department')
-        student['dept']=dept
-        student['prn']=prn
-        stdlist.append(student.copy())
+        name=input("enter your name:")
+        student["name"]=name
+        age=int(input("enter the age:"))
+        student["age"]=age
+        studentdepartment=input('enter the department')
+        student["prn"]=prn
+        prn+=1
+        studentlist.append(student.copy())
     if choice==2:
-        for i in stdlist:
-            print('-'*20)
-            for j,k in i.items():
-                print(j,':',k)
-            for i in stdlist:
-                print('-'*20)
+        name=input("enter the name:")
+        teachlist.append(name)
     if choice==3:
-        trsname=input('enter the teachers name')
-        teacher['trsname']=trsname
-        trsdept=input('enter the teacher department')
-        teacher['trsdept']:trsdept
-        trslist.append(teacher.copy())
+        print(studentlist)
     if choice==4:
-         for i in stdlist:
+        print(teachlist)
+    if choice==5:
+        student=input('enter student name')
+        for i in studentlist:
+            studentstore.append(i['name'])
+        b=len(teachlist)
+        for j in range(b):
+            if student in studentstore:
+                for i in studentlist:
+                    if i['name']==student:
+                        i['teachstore']=teachlist[j]
+        for i in studentlist:
             print('-'*20)
             for j,k in i.items():
                 print(j,':',k)
-            for i in trslist:
                 print('-'*20)
-    if choice==5:
+    if choice==6:
+        student=input('enter the department')
+        for i in studentlist:
+            studentstore.append(i['studentdepartment'])
+        if student in studentstore:
+             for i in studentlist:
+                    if i['studentdepartment']==student:
+                        for n in teachlist:
+                            i['teachstore']=teachlist[0]
+                    else:
+                            i['teachstore']=teachlist[1]
+        for i in studentlist:
+            print('-'*20)
+            for j,k in i.items():
+                print(j,':',k)
+            print('-'*20)
+    if choice==7:
+
+    if choice==8:
         exit()
