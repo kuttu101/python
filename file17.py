@@ -1,11 +1,13 @@
 student={}
 prn=2000210
+fee=10000
+depamount=[]
 studentlist=[]
 teachlist=[]
 studentstore=[]
 teachstore=[]
 while True:
-    print('1.student name','2.teacher details','3.view student','4.view teacher','5.view assigned','6.','7.fees','8.exit()')
+    print('1.student name','2.teacher details','3.view student','4.view teacher','5.view assigned','6.assign department','7.fees','8.;','9.exit()')
     choice=int(input('enter your choice'))
     if choice==1:
         name=input("enter your name:")
@@ -55,6 +57,14 @@ while True:
                 print(j,':',k)
             print('-'*20)
     if choice==7:
+        student=input('enter the student name')
+        for i in studentlist:
+            studentstore.append(i['name'])
+            if fee<=10000:
+                amount=int(input('enter the amount'))
+                depamount=10000-amount
+        print('balance amount=',depamount)
+    
 
-    if choice==8:
+    if choice==9:
         exit()
