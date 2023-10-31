@@ -12,5 +12,32 @@
 # print (sum)
 
 # letter combination of a phone number
-list={'2':"abc",'3':"def",'4':"ghi",'5':"jkl",'6':"mno",'7':"pqrs",'8':"tuv",'9':"wxyz"}
+
+list={1:"&",2:"abc",3:"def",4:"ghi",5:"jkl",6:"mno",7:"pqrs",8:"tuv",9:"wxyz",0:"_"}
+a=int(input('enter the numbers'))
+
+if a<=9:
+    b=list[a]
+    for i in b:
+        print(i)
+
+if a>9 and a<100:
+    c=a//10
+    d=a%10
+    e=list[c]
+    f=list[d]
+    for i in e:
+        for j in f:
+            print(i+j)
+        print("")
+
+
+
+
+
+    
+
+   
+
+
 
