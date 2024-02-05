@@ -1,0 +1,102 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+
+
+{% endblock %}
+
+
+{% block content %}
+    <!-- sec1 -->
+ 
+    <div class="container">
+        <div class="row pt-5 pb-5">
+          {% for i in obj %}
+  
+              <div class="col-lg-4 col-md-4 col-sm-4 " > 
+                <a  href=""  class="tour-package-item tour-location-item"> 
+                  <div class="wrapper">
+               
+                    <a href="{% url 'ayush general' i.id %}"> <img class="w-100 overla "  src="{{i.image.url}}" alt="{{i.image}}">
+                     <div class="overlaying">
+                        <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
+                     </div>
+                   </a>
+                 </div>
+                 <div class="box">
+                   <h5 class="text-center">{{i.description}}</h5>
+                 </div>
+               </a>
+               
+         
+    
+            </div>
+            {% comment %} <div class="col-lg-4 col-md-4 col-sm-4 " > 
+              <a  href=""  class="tour-package-item tour-location-item"> 
+                <div class="wrapper">
+             
+                  <a href=""> <img class="w-100 overla "  src="{% static 'images/package2.jpg' %}" alt="">
+                   <div class="overlaying">
+                      <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
+                   </div>
+                 </a>
+               </div>
+               <div class="box">
+                 <h5 class="text-center">hrtyy</h5>
+               </div>
+             </a>
+             
+       
+    
+          </div> {% endcomment %}
+    
+          {% endfor %}
+    </div>
+    
+    </div>
+    {% endblock %}
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

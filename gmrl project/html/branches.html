@@ -1,0 +1,61 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+
+
+{% endblock %}
+
+
+{% block content %}
+      
+    <!-- package1 -->
+<div class="container-fluid ">
+    <div class="row demo ">
+        <div class="col-lg-6 col-md-5 col-sm-12  col-12   Packages mt-5 pt-5    ">
+            <h2 class=" ms-5 ps-5">branches</h2>
+            <div class="Labs ">
+                <p class="ms-5 ps-5">GMRL Labs: Tripunithura's hub for affordable Health Check Ups</p>
+                <p class="ms-5 ps-5">ith cutting-edge analyzers, prioritizing your well-being</p>
+    
+            </div>
+     </div>
+        <div class="col-lg-6 col-md-5 col-sm-12  col-12  img1">
+            <img class="w-100" src="{% static 'images/package5.jpg' %}" alt=""  >
+  
+       
+        
+      </div>
+  
+</div>
+</div>
+<!-- package2 -->
+
+  <div class="container">
+    <div class="row pt-5 pb-5">
+      {% for i in obj %}
+          <div class="col-lg-4 col-md-4 col-sm-4 " > 
+            <a  href=""  class="tour-package-item tour-location-item"> 
+              <div class="wrapper">
+           
+                <a href=""> <img class="w-100 overla "  src="{{i.images.url}}" alt="">
+                 <div class="overlaying">
+                    <i class="fa fa-link text " aria-hidden="true" style="font-size:30px;"></i>
+                 </div>
+               </a>
+             </div>
+             <div class="box">
+               <h5 class="text-center">hrtyy</h5>
+             </div>
+           </a>
+           
+     
+
+        </div>
+        {% endfor %}
+     
+</div>
+
+</div>
+        
+{% endblock %}

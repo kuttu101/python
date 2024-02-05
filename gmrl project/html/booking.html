@@ -1,0 +1,151 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block header %}
+
+
+{% endblock %}
+
+
+{% block content %}
+
+
+
+     <!-- sec -->
+     <div class="container-fluid">
+        <div class="row mt-5 pt-5 demo">
+            <div class="col-lg-6 Health">
+                <h1>Appointment</h1>
+                <p>GMRL Labs: Tripunithura's hub for affordable Health Check Ups</p>
+                <p>with cutting-edge analyzers, prioritizing your well-being</p>
+   
+            </div>
+            <div class="col-lg-6 ">
+                <img class="w-100" src="{% static 'images/package5.jpg' %}" alt=""  >
+
+            </div>
+        </div>
+    </div>
+    <!-- sec1 -->
+      <!-- bookan apponitment 1 -->
+<div class="container ">
+    <div class="row text-center ">
+        <div class="col-lg ">
+            <h2>Book a Home Visit</h2>
+            <p class="personalized">Experience personalized care with our expert team—schedule your appointment for comprehensive health assessments and proactive well-being.</p>      
+        </div>
+        <form action="" method="POST">
+          {% csrf_token %}
+
+        <div class="row appointment">
+            <div class="col-lg-8">
+                <p>Your name</p>
+                <input type="text" class="form-control" name="name" required>
+            </div>
+        </div>
+        <div class="row appointment">
+            <div class="col-lg-4">
+                <p>phone</p>
+                <input type="text" class="form-control" placeholder="" name="phone" required>
+            </div>
+            <div class="col-lg-4">
+                <p>Email</p>
+              <input type="email" class="form-control" placeholder="" name="email" required>
+    
+            </div>
+          </div>
+          <div class="row appointment">
+            <div class="col-lg-4">
+                <p>Date</p>
+                <input type="date" class="form-control" placeholder="" name="date" required>
+            </div>
+            <div class="col-lg-4">
+                <p>Time</p>
+              <input type="time" class="form-control" placeholder="" name="time" required>
+    
+            </div>
+          </div>
+
+          <div class="row appointment">
+            <div class="col-lg-4">
+                <p>Gender</p>
+                <select class="form-select" aria-label="Default select example" name="gender" required>
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Other</option>
+                </select>
+            </div>
+            <div class="col-lg-4">
+                <p>Age</p>
+              <input type="number" class="form-control" placeholder="" name="age" required>
+    
+            </div>
+          </div>
+
+          <div class="row appointment">
+            <div class="col-lg-5   mt-2">
+                <p>Address</p>
+              <textarea  id="" cols="65" rows="3" placeholder="" name="address" required></textarea>    
+            </div>
+          </div>
+
+          <div class="row  appointment">
+            <div class="col-lg-5   mt-2">
+                <p>message</p>
+              <textarea  id="" cols="65" rows="3" placeholder="" name="message" required></textarea>    
+            </div>
+          </div>
+          <div class="col-lg-8 centersub"><button class="Submit">Submit</button>
+          </div>
+        </form>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
